@@ -82,6 +82,64 @@ const websiteData = {
   program: [],
   speakers: [],
 
- 
+  organizers: [
+    {
+      initials: "HC",
+      role: "Chair",
+      name: "Henk Corporaal",
+      affiliation: "Eindhoven University of Technology",
+      email: "",
+      bio: "Henk Corporaal is Professor Emeritus at Eindhoven University of Technology (TU/e), specializing in computer architecture and energy-efficient computing. His research spans deep-learning accelerators, near-memory and compute-in-memory architectures, compiler techniques, and hardware–software co-design for efficient AI systems."
+    },
+    {
+      initials: "SC",
+      role: "Co-Chair",
+      name: "Stefano Corda",
+      affiliation: "Huawei Europe",
+      email: "",
+      bio: "Stefano Corda is a researcher at Huawei Europe working on high-performance and energy-efficient computing, with interests in heterogeneous AI infrastructure, accelerator integration, reduced-precision computation, and hardware–software co-design. He received his PhD in Electrical Engineering from Eindhoven University of Technology in 2022, where his research focused on characterization and acceleration of HPC workloads, including reduced-precision and FPGA-based acceleration. His current work focuses on efficient AI systems and emerging heterogeneous computing architectures."
+    },
+    {
+      initials: "DS",
+      role: "Organizer",
+      name: "Dimitrios Soudris",
+      affiliation: "National Technical University of Athens",
+      email: "",
+      bio: "Dimitrios Soudris is Professor at the National Technical University of Athens and Director of the Microprocessors and Digital Systems Laboratory (MicroLab). His research covers embedded and reconfigurable systems, low-power architectures, hardware acceleration, approximate computing, and energy-efficient system design."
+    },
+    {
+      initials: "AK",
+      role: "Organizer",
+      name: "Akash Kumar",
+      affiliation: "Ruhr University Bochum",
+      email: "",
+      bio: "Akash Kumar is Full Professor and Chair of Embedded Systems at Ruhr University Bochum. His research focuses on processor and embedded-system architectures, design automation, resource-efficient and predictable computing, and hardware–software co-design, including accelerator and FPGA-based architectures."
+    },
+    {
+      initials: "PP",
+      role: "Organizer",
+      name: "Philipp Petersen",
+      affiliation: "University of Vienna",
+      email: "",
+      bio: "Philipp Petersen is Associate Professor for Mathematics of Machine Learning at the University of Vienna. His research focuses on the mathematical foundations of deep learning, approximation theory, numerical analysis, and the reliability and efficiency of neural networks, including finite- and low-precision computation for deep learning and transformer models."
+    },
+    {
+      initials: "ST",
+      role: "Organizer",
+      name: "Sajjad Tamimi",
+      affiliation: "Huawei Europe",
+      email: "",
+      bio: "Sajjad Tamimi is a Senior R&D Engineer at Huawei Europe working on AI hardware and accelerators, computer architecture, memory systems and data movement, and hardware–software co-design. Before joining Huawei, he was a postdoctoral researcher at TU Darmstadt, where he worked on data-intensive systems, PCIe/CXL/CCIX interconnects, smart storage, and FPGA-based acceleration. He completed his PhD at TU Darmstadt on hardware/software co-design for accelerated near-data processing in modern database systems."
+    },
+    {
+      initials: "ZL",
+      role: "Organizer",
+      name: "Zheng Li",
+      affiliation: "Huawei Europe",
+      email: "",
+      bio: "Zheng Li is a senior R&D and innovation leader at Huawei Europe with 20 years of international experience spanning computing architecture, AI, industrial software, and strategic research management. He received his PhD from INRIA, where he worked on processor architecture and parallel programming models, and later held senior research positions at INRIA and IRT SystemX. Since 2017, he has been with Huawei's European Research Institute, leading innovation, academic development, and strategic research collaboration."
+    }
+  ],
+
   footerText: "APEX-AI 2027 · HiPEAC Conference · Glasgow, UK"
 };
