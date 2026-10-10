@@ -5,119 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title id="browser-title">APEX-AI @ HiPEAC 2027</title>
-
   <meta
     name="description"
     content="APEX-AI is a HiPEAC 2027 workshop on approximate, low-precision, sparse, compressed, and efficient AI execution from training to deployment."
   />
+  <link rel="canonical" href="https://apex-ai-workshop.github.io/hipeac27/" />
 
-  <link
-    rel="canonical"
-    href="https://apex-ai-workshop.github.io/hipeac27/"
-  />
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="APEX-AI Workshop" />
   <meta property="og:title" content="APEX-AI @ HiPEAC 2027" />
-
   <meta
     property="og:description"
     content="Approximate, Low-Precision, Sparsity, and Efficient AI Execution from Training to Deployment."
   />
+  <meta property="og:url" content="https://apex-ai-workshop.github.io/hipeac27/" />
+  <meta property="og:image" content="https://apex-ai-workshop.github.io/hipeac27/assets/images/apex-ai-logo.png" />
+  <meta property="og:image:alt" content="APEX-AI Workshop logo" />
 
-  <meta
-    property="og:url"
-    content="https://apex-ai-workshop.github.io/hipeac27/"
-  />
-
-  <meta
-    property="og:image"
-    content="https://apex-ai-workshop.github.io/hipeac27/assets/images/apex-ai-logo.png"
-  />
-
-  <meta
-    property="og:image:alt"
-    content="APEX-AI Workshop logo"
-  />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css?v=20260914-1" />
   <link rel="stylesheet" href="hero-flow.css?v=20260914-1" />
 </head>
 
 <body>
-
-  <!-- =========================================================
-       HEADER
-       ========================================================= -->
-
   <header class="site-header">
     <div class="wrap nav">
-
-      <a
-        class="brand"
-        href="#top"
-        aria-label="APEX-AI Workshop home"
-      >
-        <img
-          class="brand-logo-image"
-          src="assets/images/apex-ai-logo.png"
-          alt="APEX-AI Workshop logo"
-        />
-
-        <span id="nav-title" class="sr-only">
-          APEX-AI Workshop
-        </span>
+      <a class="brand" href="#top" aria-label="APEX-AI Workshop home">
+        <img class="brand-logo-image" src="assets/images/apex-ai-logo.png" alt="APEX-AI Workshop logo" />
+        <span id="nav-title" class="sr-only">APEX-AI Workshop</span>
       </a>
 
-      <nav
-        class="desktop-menu"
-        id="desktop-menu"
-      ></nav>
+      <nav class="desktop-menu" id="desktop-menu"></nav>
 
-      <button
-        class="menu-button"
-        id="menu-button"
-        aria-label="Open menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="menu-button" id="menu-button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
       </button>
-
     </div>
 
-    <nav
-      class="mobile-menu"
-      id="mobile-menu"
-    ></nav>
+    <nav class="mobile-menu" id="mobile-menu"></nav>
   </header>
 
-
-  <!-- =========================================================
-       MAIN
-       ========================================================= -->
-
   <main id="top">
-
-
-    <!-- =======================================================
-         HERO
-         ======================================================= -->
-
     <section class="hero">
       <div class="wrap hero-grid">
-
         <div>
-
-          <h1
-            id="workshop-short-title"
-            class="sr-only"
-          >
-            APEX-AI
-          </h1>
+          <h1 id="workshop-short-title" class="sr-only">APEX-AI</h1>
 
           <img
             class="hero-logo-image"
@@ -125,308 +56,133 @@
             alt="APEX-AI HiPEAC 2027 Workshop logo"
           />
 
-          <p
-            class="subtitle"
-            id="workshop-subtitle"
-          ></p>
+          <p class="subtitle" id="workshop-subtitle"></p>
 
           <div class="hero-meta">
-
             <div>
               <span>Date</span>
               <strong id="workshop-date"></strong>
             </div>
-
             <div>
               <span>Location</span>
               <strong id="workshop-location"></strong>
             </div>
-
             <div>
               <span>Co-located with</span>
-
               <strong>
                 <a
                   class="hero-meta-link"
                   href="https://www.hipeac.net/2027/glasgow/"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  HiPEAC 2027 ↗
-                </a>
+                >HiPEAC 2027 ↗</a>
               </strong>
-
             </div>
-
           </div>
         </div>
 
-
         <aside class="hero-card">
           <div class="hero-card-inner">
-
-            <div
-              class="countdown-panel"
-              id="countdown-panel"
-            ></div>
-
+            <div class="countdown-panel" id="countdown-panel"></div>
           </div>
         </aside>
-
       </div>
     </section>
 
-
-    <!-- =======================================================
-         ABOUT
-         ======================================================= -->
-
-    <section
-      id="about"
-      class="section"
-    >
+    <section id="about" class="section">
       <div class="wrap">
-
         <h2>About the Workshop</h2>
-
         <div id="about-text"></div>
-
       </div>
     </section>
 
-
-    <!-- =======================================================
-         CALL FOR PARTICIPATION
-         ======================================================= -->
-
-    <section
-      id="cfp"
-      class="section soft-section"
-    >
+    <section id="cfp" class="section soft-section">
       <div class="wrap">
-
         <div class="cfp-heading-row">
-
           <h2>Call for Participation</h2>
-
           <a
             class="button primary"
             href="assets/documents/APEX-AI_CFP.pdf"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            CFP
-          </a>
-
+          >CFP</a>
         </div>
-
         <div id="cfp-text"></div>
-
       </div>
     </section>
 
-
-    <!-- =======================================================
-         TOPICS
-         ======================================================= -->
-
-    <section
-      id="topics"
-      class="section"
-    >
+    <section id="topics" class="section">
       <div class="wrap">
-
         <h2>Topics of Interest</h2>
-
-        <div
-          class="topic-grid"
-          id="topics-list"
-        ></div>
-
+        <div class="topic-grid" id="topics-list"></div>
       </div>
     </section>
 
-
-    <!-- =======================================================
-         IMPORTANT DATES
-         ======================================================= -->
-
-    <section
-      id="dates"
-      class="section soft-section"
-    >
+    <section id="dates" class="section soft-section">
       <div class="wrap">
-
         <h2>Important Dates</h2>
-
         <div class="dates-submission-grid">
-
-          <div
-            class="dates-card"
-            id="dates-list"
-          ></div>
-
+          <div class="dates-card" id="dates-list"></div>
 
           <aside class="side-card">
-
             <h3>Abstract Submission</h3>
-
             <p>
-              Submit a one-page abstract through EasyChair for
-              consideration as a contributed presentation.
-              No submission is required to attend APEX-AI.
+              Submit a one-page abstract through EasyChair for consideration as a contributed presentation. No submission is required to attend APEX-AI.
             </p>
-
             <a
               class="button primary"
               id="submission-button"
               href="https://easychair.org/cfp/APEX-AI-27"
               target="_blank"
               rel="noopener noreferrer"
-            >
-              Submit an Abstract ↗
-            </a>
-
+            >Submit an Abstract ↗</a>
           </aside>
-
         </div>
       </div>
     </section>
 
-
-    <!-- =======================================================
-         SUBMISSION GUIDELINES
-         ======================================================= -->
-
-    <section
-      id="submission-guidelines"
-      class="section"
-    >
+    <section id="submission-guidelines" class="section">
       <div class="wrap">
-
         <h2>Abstract Submission Guidelines</h2>
-
         <div id="submission-guidelines-text"></div>
-
       </div>
     </section>
 
-
-    <!-- =======================================================
-         WORKSHOP SCHEDULE
-         ======================================================= -->
-
-    <section
-      id="program"
-      class="section soft-section"
-    >
+    <section id="program" class="section soft-section">
       <div class="wrap">
-
         <h2>Workshop Schedule</h2>
-
-        <div
-          class="program-grid"
-          id="program-list"
-        ></div>
-
+        <div class="program-grid" id="program-list"></div>
       </div>
     </section>
 
-
-    <!-- =======================================================
-         SPEAKERS
-         ======================================================= -->
-
-    <section
-      id="speakers"
-      class="section"
-    >
+    <section id="speakers" class="section">
       <div class="wrap">
-
         <h2>Speakers</h2>
-
-        <div
-          class="people-grid"
-          id="speakers-list"
-        ></div>
-
+        <div class="people-grid" id="speakers-list"></div>
       </div>
     </section>
 
-
-    <!-- =======================================================
-         ORGANIZERS
-         ======================================================= -->
-
-    <section
-      id="organizers"
-      class="section"
-    >
+    <section id="organizers" class="section">
       <div class="wrap">
-
         <h2>Organizers</h2>
-
-        <div
-          class="people-grid organizers"
-          id="organizers-list"
-        >
-          <div class="tbd-card">
-            <strong>
-              Organizers will be announced shortly
-            </strong>
-          </div>
-        </div>
-
+        <div class="people-grid organizers" id="organizers-list"></div>
       </div>
     </section>
 
-
-    <!-- =======================================================
-         CONTACT
-         ======================================================= -->
-
-    <section
-      id="contact"
-      class="section soft-section"
-    >
+    <section id="contact" class="section soft-section">
       <div class="wrap contact-box">
-
         <div>
-
           <h2>Contact</h2>
-
-          <p>
-            Questions about APEX-AI?
-            Get in touch with the organizing team.
-          </p>
-
+          <p>Questions about APEX-AI? Get in touch with the organizing team.</p>
         </div>
-
-        <a
-          class="button primary"
-          id="contact-email"
-          href="#"
-        ></a>
-
+        <a class="button primary" id="contact-email" href="#"></a>
       </div>
     </section>
-
   </main>
-
-
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
 
   <footer id="footer-text"></footer>
 
-
-  <!-- =========================================================
-       JAVASCRIPT
-       ========================================================= -->
-
   <script src="website-data.js?v=20260914-1"></script>
   <script src="script.js?v=20260914-1"></script>
-
 </body>
 </html>
