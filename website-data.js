@@ -61,7 +61,7 @@ const websiteData = {
     </ul>
   `,
 
-  submissionLink: "https://easychair.org/cfp/APEX-AI-27",
+  submissionLink: "https://easychair.org/conferences/?conf=apexai27",
 
   topics: [
     "<strong>Low-Precision &amp; Approximate AI</strong> — FP8/FP4/INT4, adaptive precision, approximate arithmetic",
