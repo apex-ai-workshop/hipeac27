@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://apex-ai-workshop.github.io/hipeac27/sitemap.xml
