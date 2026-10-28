@@ -39,3 +39,5 @@ Then enable GitHub Pages from the repository's main branch/root.
 Organizer profiles follow the RAISE-Arch interaction: biographies are hidden by default, expand inline when a mouse/trackpad passes over a profile, and disappear when the pointer leaves. Keyboard focus also reveals the bio, while touch devices can tap a profile to toggle it.
 
 Chair / Co-Chair / Organizer roles are shown directly on the profile cards.
+
+
