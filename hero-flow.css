@@ -30,6 +30,37 @@
   text-align: center;
 }
 
+.countdown-group.extended {
+  background: var(--red-100);
+}
+
+.countdown-group.extended h3 {
+  color: var(--red-700);
+}
+
+.countdown-group.extended .badge-extended {
+  margin-left: 4px;
+}
+
+.countdown-old-date {
+  margin: -6px 0 11px;
+  color: var(--muted);
+  font-size: .72rem;
+  text-align: center;
+}
+
+.countdown-old-date s {
+  text-decoration-color: var(--red-700);
+}
+
+.countdown-group.extended .countdown-cell {
+  background: #fff;
+}
+
+.countdown-group.extended .countdown-cell strong {
+  color: var(--red-700);
+}
+
 .countdown-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

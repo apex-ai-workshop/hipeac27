@@ -28,8 +28,14 @@ function renderCountdowns() {
 
   panel.innerHTML = websiteData.countdowns
     .map((timer, index) => `
-      <div class="countdown-group ${timer.accent || ""}" data-countdown-index="${index}">
-        <h3>${timer.title}</h3>
+      <div class="countdown-group ${timer.accent || ""}${timer.extended ? " extended" : ""}" data-countdown-index="${index}">
+        <h3>
+          ${timer.title}
+          ${timer.extended ? '<span class="badge-extended">Extended</span>' : ""}
+        </h3>
+        ${timer.extended && timer.previousDateLabel
+          ? `<p class="countdown-old-date">Originally <s>${timer.previousDateLabel}</s></p>`
+          : ""}
         <div class="countdown-grid">
           ${["days", "hours", "minutes", "seconds"].map(unit => `
             <div class="countdown-cell">
@@ -120,12 +126,23 @@ function renderPage() {
   `;
 
   document.getElementById("dates-list").innerHTML = websiteData.dates
-    .map(item => `
-      <div class="date-row">
-        <span>${item.label}</span>
-        <strong>${item.value}</strong>
-      </div>
-    `)
+    .map(item => item.extended
+      ? `
+        <div class="date-row extended">
+          <span>${item.label}</span>
+          <strong>
+            ${item.previousValue ? `<span class="date-old">${item.previousValue}</span>` : ""}
+            <span class="date-new">${item.value}</span>
+            <span class="badge-extended">Extended</span>
+          </strong>
+        </div>
+      `
+      : `
+        <div class="date-row">
+          <span>${item.label}</span>
+          <strong>${item.value}</strong>
+        </div>
+      `)
     .join("");
 
   document.getElementById("submission-guidelines-text").innerHTML =
@@ -150,13 +167,6 @@ function renderPage() {
 
   document.getElementById("organizers-list").innerHTML =
     websiteData.organizers.map(createOrganizerCard).join("");
-
-  const advisorsList = document.getElementById("advisors-list");
-  if (advisorsList) {
-    advisorsList.innerHTML = websiteData.academicAdvisors.length
-      ? websiteData.academicAdvisors.map(createOrganizerCard).join("")
-      : createTbdCard(websiteData.academicAdvisorPlaceholder || "Academic advisors to be confirmed");
-  }
 
   const emailButton = document.getElementById("contact-email");
   if (emailButton) {
