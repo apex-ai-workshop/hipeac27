@@ -29,8 +29,10 @@ const websiteData = {
   countdowns: [
     {
       title: "Abstract Submission Deadline",
-      targetDate: "2026-11-15T23:59:59-12:00",
-      accent: "green"
+      targetDate: "2026-12-03T23:59:59-12:00",
+      accent: "green",
+      extended: true,
+      previousDateLabel: "November 15, 2026 (AoE)"
     },
     {
       title: "Countdown to the Workshop",
@@ -72,7 +74,12 @@ const websiteData = {
   ],
 
   dates: [
-    { label: "Abstract submission deadline", value: "November 15, 2026 (AoE)" },
+    {
+      label: "Abstract submission deadline",
+      value: "December 3, 2026 (AoE)",
+      previousValue: "November 15, 2026 (AoE)",
+      extended: true
+    },
     { label: "Selection notification", value: "December 8, 2026" },
     { label: "Final workshop schedule", value: "December 15, 2026" },
     { label: "HiPEAC early registration", value: "December 25, 2026" },
